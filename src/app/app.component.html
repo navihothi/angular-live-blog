@@ -1,2 +1,12 @@
-<h2>{{title}}</h2>
-<app-article></app-article>
+<div class="container-fluid">
+        <div class="jumbotron">
+                <div>
+                        <h4>{{title}}</h4>
+                        <a routerLink="/">Home</a>
+                        <a routerLink="/new-article">New Articles</a>
+                </div>
+        <router-outlet></router-outlet>
+        </div>
+</div>
+
+

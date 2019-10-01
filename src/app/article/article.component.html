@@ -1,1 +1,7 @@
-<p>article works!</p>
+<div>
+  <h3>{{article.title}}</h3>
+  <p *ngIf="author">{{ article.author }}</p>
+  <p> {{ article.date | date:'short' }} </p>
+  <p>{{ article.body }}</p>
+</div>
+

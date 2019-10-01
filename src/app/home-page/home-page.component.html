@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-9">
+      <app-article 
+        *ngIf="selectedArticle" 
+        [article]="selectedArticle">
+      </app-article>
+  </div>
+  <div class="col-3">
+      <app-blog-roll
+        (selectedArticle)="displaySelectedArticle($event)"
+        [articles]='fetchService.articles'>
+      </app-blog-roll>
+      <!-- 
+      [articles] from @Input() from blog-roll.component.ts
+      'articles' from the parent component.
+                                                      -->
+  </div>  
+</div>

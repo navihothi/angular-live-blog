@@ -3,16 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
+import { BlogRollComponent } from './blog-roll/blog-roll.component';
+import { ArticleItemComponent } from './article-item/article-item.component';
+import { NewArticleComponent } from './new-article/new-article.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticleComponent
+    ArticleComponent,
+    BlogRollComponent,
+    ArticleItemComponent,
+    NewArticleComponent,
+    HomePageComponent
   ],
-  imports: [
-    BrowserModule
+  imports: [ //
+    BrowserModule,
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
