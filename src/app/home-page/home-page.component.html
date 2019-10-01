@@ -8,7 +8,7 @@
   <div class="col-3">
       <app-blog-roll
         (selectedArticle)="displaySelectedArticle($event)"
-        [articles]='fetchService.articles'>
+        [articles]='fetchService.articles | async'>
       </app-blog-roll>
       <!-- 
       [articles] from @Input() from blog-roll.component.ts

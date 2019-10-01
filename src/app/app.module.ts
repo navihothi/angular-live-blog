@@ -8,6 +8,7 @@ import { ArticleItemComponent } from './article-item/article-item.component';
 import { NewArticleComponent } from './new-article/new-article.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,9 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [ //
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [], 
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
